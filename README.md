@@ -61,7 +61,7 @@ By using this tool, you agree to the terms in our [Legal Disclaimer](pdf_payload
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pdf-payload-injector.git
+git clone https://github.com/SuzyQAttx/PeeDeezF
 cd pdf-payload-injector
 
 # Install dependencies
