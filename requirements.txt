@@ -1,0 +1,34 @@
+# PDF Payload Injector Requirements
+
+# PDF Manipulation
+PyPDF2>=3.0.0
+pdfminer.six>=20221105
+pikepdf>=8.0.0
+reportlab>=4.0.0
+
+# Data Processing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Security and Cryptography
+cryptography>=41.0.0
+pyopenssl>=23.0.0
+
+# Utilities
+colorama>=0.4.6
+argparse>=1.4.0
+python-magic>=0.4.27
+configparser>=6.0.0
+python-dateutil>=2.8.2
+
+# Encoding
+base58>=2.1.1
+
+# Exploitation (Optional - for advanced features)
+# metasploit-connector (if available)
+# exploitdb-py
+
+# Development and Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0

@@ -1,0 +1,48 @@
+{
+  "tool_name": "PDF Payload Injector",
+  "version": "1.0.0",
+  "default_target": "windows",
+  "payload_directory": "./payloads",
+  "output_directory": "./output",
+  "log_directory": "./logs",
+  "logging": true,
+  "log_file": "pdf_injector.log",
+  "debug": false,
+  "max_payload_size": 524288,
+  "timeout": 30,
+  "supported_formats": ["pdf"],
+  "targets": {
+    "windows": {
+      "extensions": [".exe", ".dll", ".bat", ".ps1"],
+      "description": "Windows executables and scripts"
+    },
+    "linux": {
+      "extensions": [".sh", ".elf", ".bin"],
+      "description": "Linux executables and scripts"
+    },
+    "macos": {
+      "extensions": [".app", ".sh", ".dylib"],
+      "description": "macOS executables and scripts"
+    }
+  },
+  "cve_database": {
+    "update_interval": 7,
+    "source": "local",
+    "backup_sources": ["online", "cached"]
+  },
+  "exploit_db": {
+    "update_interval": 7,
+    "api_endpoint": "https://www.exploit-db.com/api/"
+  },
+  "email_delivery": {
+    "subject_prefix": "",
+    "body_template": "",
+    "attachment_name": "document.pdf"
+  },
+  "safety_checks": {
+    "verify_pdf_structure": true,
+    "validate_payload": true,
+    "check_antivirus": false,
+    "sandbox_test": false
+  }
+}
